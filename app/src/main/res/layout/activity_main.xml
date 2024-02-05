@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcome_to_"
+        android:layout_width="264dp"
+        android:layout_height="147dp"
+        android:fontFamily="@font/inter"
+        android:gravity="top"
+        android:text="@string/welcome_to_"
+        android:textAppearance="@style/welcome_to_"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="447dp" />
+
+
+    <Button
+        android:id="@+id/getstart"
+        android:layout_width="203dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="8sp"
+        android:text="Generate Quote!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/book_lover_"
+        android:layout_width="426dp"
+        android:layout_height="387dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:background="@drawable/book_lover_customizable_cartoon_illustrations_bro_style"
+        app:srcCompat="@drawable/book"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-11dp" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

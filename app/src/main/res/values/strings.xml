@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">task1</string>
+    <string name="welcome_to_">
+Welcome to Random Quote Generator
+</string>
+    <string name="share_button_description">Share content</string>
+
+</resources>

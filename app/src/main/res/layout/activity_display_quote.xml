@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayQuoteActivity" >
+
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="411dp"
+        android:layout_height="394dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xx"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="407dp"
+        android:layout_height="184dp"
+        android:background="@drawable/rectangle_background"
+        android:fontFamily="@font/bold"
+        android:padding="20dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundImageView" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="62dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/quoteTextView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/share"
+        android:contentDescription="@string/share_button_description"
+        app:layout_constraintStart_toStartOf="@id/quoteTextView"
+        app:layout_constraintTop_toBottomOf="@id/quoteTextView"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
